@@ -67,3 +67,40 @@ button {
   font-size: 40px;
   background: rgba(4, 122, 177, 0.884);
 }
+
+
+button:hover {
+  
+  animation-name: circle;
+  animation-duration:  2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes circle {
+  0% {
+    border: 1px solid rgb(13, 211, 23);
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    border: 1px solid rgb(179, 199, 5);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    border: 1px solid rgb(10, 96, 172);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    border: 1px solid rgb(255, 240, 246);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    border: 1px solid rgb(6, 57, 102);
+    left: 0px;
+    top: 0px;
+  }
+}
